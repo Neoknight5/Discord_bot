@@ -13,16 +13,13 @@ cursor = conn.cursor()
 
 def create_table():
 
-    cursor.execute("""
+    cursor.execute('''
     CREATE TABLE IF NOT EXISTS users(
 
         id INTEGER PRIMARY KEY,
         coins INTEGER,
         xp INTEGER,
-        level INTEGER
-
-    )
-    """)
+        level INTEGER)''')
 
     conn.commit()
 
